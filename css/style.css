@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --first-color: #12192C;
+    --second-color: #F5a623;
+    --white-coler: #EDEDED;
+
+    --body-font: 'Roboto', sans-serif;
+    --small-font-size: 0.875rem;
+
+    @media screen and (min-width: 768px){
+        --small-font-size: 0.938rem;
+    }
+}
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    margin: 0;
+    font-family: var(--body-font);
+    background: #162534;
+    transition: 0,5s;
+}
+h1{
+    margin: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.l-hahmp3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 100vh;
+    background: var(--first-color);
+    padding: 1.25rem 0.5rem 2rem;
+    transition: 0.5s;
+    z-index: var(--z-fixed);
+}
+.hah{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.hah__logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+}
+.hah__logo-icon{
+    margin-right: 0.75rem;
+    width: 35px;
+    height: 35px;
+    color: var(--white-coler);
+}
+.hah__logo-text{
+    font-size: 1.75rem;
+    color: #00FFFF;
+    font-weight: 700;
+}
+.hah__toggle{
+    position: absolute;
+    top: 1.1rem;
+    right: -0.5rem;
+    width: 18px;
+    height: 18px;
+    background: var(--second-color);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hah__link{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 00.5rem;
+    color: var(--white-coler);
+    transition: 0.5s;
+}
+.hah__link:hover{
+    background: var(--second-color);
+    color: var(--first-color);
+}
+.hah__icon{
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+}
+.hah__text{
+    font-size: 700;
+}
+.show{
+    width: 220px;
+}
+/* .rotate{
+    transform: rotate(180deg);
+    transform: 0.3s;
+} */
+
+/* hoang anh */
+*{
+    box-sizing:border-box;
+
+}
+#search-box{
+    background: rgb(185, 180, 180);;
+    border-radius: 30px;
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    top: 10px;
+    padding: 10px 10px;
+    font-size: 18px;
+    background: rgb(185, 180, 180);
+    border-radius: 30px;
+    width: 350px;
+}
+#search-box:hover{
+    box-shadow: rgb(1 1 1 / 24%) 0px 0px 2px 0px,
+            rgb(228 223 223 / 24%) -20px 20px 40px -4px;
+}
+ 
+#search-box #search-btn{
+    background-color:#fff;
+    cursor: pointer;
+    border: none;
+    top: 10px;
+    padding:14px 15px ;
+    border-radius: 50% ;
+}
+input[type="text"]::placeholder {
+    color: #080808;
+    font-style: bold;
+}
+.avatar {
+    --avatar-size:40px;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+}
+.navuser {
+    /* position: relative;
+    z-index: 10;
+    cursor: pointer; */
+}
+.navuser-popup__ul {
+    /* padding: 0;
+    min-width: 190px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: rgba(1, 1, 1, 0.24) 0px 0px 2px 0px,
+    rgba(228, 223, 223, 0.24) -20px 20px 40px -4px;
+    border-radius: 10px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: 0.1s;
+    z-index: 10; */
+    right: 10px;
+    position: absolute;
+    top: 44px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 8px;
+    display: none;
+}
+.header {
+    display: flex;
+}
+.navuser.avatar {
+    background-image: url("../img/Screenshot_2022-09-22_013349.svg");
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    margin: 6px;
+    background-size: cover;
+}
+
+li.navuser-popup__li {
+    cursor: pointer;
+    padding: 14px 14px;
+    background-color: var(--first-color);
+}
+
+.navuser-popup__ul.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+}
+.navuser-popup__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    padding: 6px 10px;
+    margin: 6px;
+    border-radius: 10px;
+    transition: 0,3s;
+}
+
+.navuser-popup__link.active {
+    background-color: rgb(173, 165, 165);
+}
+.navuser-hr {
+    border-width: 0px 0px thin;
+    border-color: rgb(3, 3, 3) ;
+    border-style: dashed;
+}
+.navuser-logout__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 90%;
+    margin: 6px auto;
+    cursor: pointer;
+    transition: 0,3sr
+}
+
+.navuser-pop__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navuser-popup__li:hover{
+    background: var(--second-color);
+    color: var(--first-color);
+    align-items: center;
+}
+.header_tool {
+    position: relative;
+    max-width: 480px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 10px;
+}
+

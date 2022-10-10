@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHAH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- HA -->
+    <div class = "header">
+        
+        <div class="navuser avatar"></div>
+            <ul class="navuser-popup__ul">
+                 <li class = "navuser-popup__li">
+                    <a href ="#profile" class="navuser-pop__link">
+                        <i class="fa-solid fa-user"></i>Thông tin cá nhân</a>
+
+                </li>
+                <li class = "navuser-popup__li">
+                    <a href ="#profile" class="navuser-pop__link">
+                        <i class="fa-regular fa-gem"></i>Nâng cấp VIP</a>
+
+                <!--</li>
+                <li class = "navuser-popup__li">
+                    <a href ="#profile" class="navuser-pop__link">
+                        <i class="fa-light fa-rectangle-wide"></i>Mua code </a>
+
+                </li>-->
+                <li class = "navuser-popup__li">
+                    <a href ="#profile" class="navuser-pop__link navuser-logout__btn active">
+                        <i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</a>
+
+                </li>
+            </ul>
+        <div class="header_tool">
+            <form action="" id="search-box">
+                <input type="text" id="search-text"
+                placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...">
+                <button id="search-btn"><i class="fa-solid
+                fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+ <!-- Hieu -->
+    <div class="l-hahmp3" id="hahmp3">
+        <div class="hah">
+            <div>
+                <a href="#" class="hah__logo">
+                    <img src="img/Screenshot_2022-09-22_013349.svg" alt="" class="hah__logo-icon">
+                    <span class="hah__logo-text">HAHmp3</span>
+                </a>
+                <div class="hah__toggle" id="hah-toggle">
+                    <i class='bx bx-chevrons-right'></i>
+                </div>
+                <ul class="hah__list">
+                    <a href="#" class="hah__link active">
+                        <i class='bx bx-speaker hah__icon'></i>
+                        <span class="hah__text">Cá Nhân</span>
+                    </a>
+                    <a href="#" class="hah__link active">
+                        <i class='bx bxs-album hah__icon'></i>
+                        <span class="hah__text">Khám Phá</span>
+                    </a>
+                    <a href="#" class="hah__link active">
+                        <i class='bx bx-camera-movie hah__icon'></i>
+                        <span class="hah__text">MV</span>
+                    </a>
+                    <a href="#" class="hah__link active">
+                        <i class='bx bx-bookmark hah__icon'></i>
+                        <span class="hah__text">Follow</span>
+                    </a>
+                    <a href="#" class="hah__link active">
+                        <i class='bx bx-music hah__icon'></i>
+                        <span class="hah__text">Nhạc Mới</span>
+                    </a>
+                    <a href="#" class="hah__link active">
+                        <i class='bx bxs-category-alt hah__icon'></i>
+                        <span class="hah__text">Thể Loại</span>
+                    </a>
+                    <a href="#" class="hah__link active">
+                        <i class='bx bxl-sketch hah__icon'></i>
+                        <span class="hah__text">Top 100</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="hah__link active">
+                <i class='bx bx-log-out-circle hah__icon'></i>
+                <span class="hah__text">Close</span>
+            </a>
+        </div>
+    </div>  
+    <!-- Hai  -->
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/304836000_1405912563244156_7201494925872101653_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WOMM344GI4MAX8DQi8b&_nc_ht=scontent.fhan2-5.fna&oh=00_AT-Trvt9T78LDRWaB5An-JLazYC2NZN0AheNB_3hEB0-wQ&oe=632E6EDC')"></div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <!-- <input type="range" id="progress" min="0" max="100" step="1"> -->
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist"></div>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="js/sidebar.js"></script>
+</body>
+
+</html>
